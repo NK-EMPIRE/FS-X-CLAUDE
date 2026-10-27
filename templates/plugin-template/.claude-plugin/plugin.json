@@ -1,0 +1,7 @@
+{
+  "name": "my-plugin",
+  "version": "0.1.0",
+  "description": "One sentence: what this plugin does and for whom.",
+  "author": { "name": "FirstSelfie", "email": "firstselfie.official@gmail.com" },
+  "keywords": ["video"]
+}

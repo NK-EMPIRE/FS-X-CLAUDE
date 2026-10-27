@@ -1,0 +1,7 @@
+{
+  "name": "vfx-intro",
+  "version": "1.0.0",
+  "description": "Cinema-grade 3D/VFX intros (Think School / Netflix-doc style) with Blender + After Effects + ffmpeg, from a reference video, an idea or keywords.",
+  "author": { "name": "FirstSelfie", "email": "firstselfie.official@gmail.com" },
+  "keywords": ["vfx", "blender", "after-effects", "intro", "motion-graphics", "cgi", "title-sequence"]
+}

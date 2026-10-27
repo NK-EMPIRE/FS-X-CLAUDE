@@ -1,0 +1,18 @@
+# renders, caches, heavy binaries never go in the marketplace
+*.png
+!**/docs/**/*.png
+*.jpg
+*.mp4
+*.mov
+*.exr
+*.blend
+*.blend1
+*.aep
+*.zip
+**/firecache*/
+**/__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+*.log
+.env
