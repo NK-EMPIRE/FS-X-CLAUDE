@@ -4,9 +4,9 @@ Hollywood / Think School sound for a finished picture: reference analysis, an or
 
 ## Install
 ```bash
-claude plugin marketplace add NK-EMPIRE/FS-X-VFX
+claude plugin marketplace add NK-EMPIRE/FS-X-CLAUDE
 claude plugin install cinematic-sound@fs-x-vfx
 ```
 Restart Claude Code, then use: /score-this
 
-Part of the [FS-X-VFX marketplace](https://github.com/NK-EMPIRE/FS-X-VFX). Update with `claude plugin update cinematic-sound@fs-x-vfx`.
+Part of the [FS-X-VFX marketplace](https://github.com/NK-EMPIRE/FS-X-CLAUDE). Update with `claude plugin update cinematic-sound@fs-x-vfx`.

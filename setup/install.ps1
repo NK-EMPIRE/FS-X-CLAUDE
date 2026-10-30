@@ -2,7 +2,7 @@
 #   powershell -ExecutionPolicy Bypass -File setup\install.ps1                  -> all plugins
 #   powershell -ExecutionPolicy Bypass -File setup\install.ps1 cinematic-sound  -> just that one
 $ErrorActionPreference = "Stop"
-$Repo = "NK-EMPIRE/FS-X-VFX"; $Market = "fs-x-vfx"
+$Repo = "NK-EMPIRE/FS-X-CLAUDE"; $Market = "fs-x-vfx"
 if (-not (Get-Command claude -ErrorAction SilentlyContinue)) { Write-Host "Install Claude Code first: https://claude.com/claude-code" -ForegroundColor Red; exit 1 }
 if (-not (Get-Command git -ErrorAction SilentlyContinue)) { Write-Host "Install Git and sign in to GitHub first." -ForegroundColor Red; exit 1 }
 $env:GIT_TERMINAL_PROMPT = "0"

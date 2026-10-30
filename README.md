@@ -14,7 +14,7 @@ Each plugin installs **on its own**, so you can share just one plugin with someo
 ## Install
 **Once per computer**, add the marketplace. You need repo access and Git signed in to GitHub:
 ```bash
-claude plugin marketplace add NK-EMPIRE/FS-X-VFX
+claude plugin marketplace add NK-EMPIRE/FS-X-CLAUDE
 ```
 **Then install only what you need**, one plugin or several:
 ```bash
@@ -30,7 +30,7 @@ Restart Claude Code after installing.
 **Remove:** `claude plugin uninstall <plugin>@fs-x-vfx`.
 
 ## Share one plugin
-Send the plugin's own page, e.g. `https://github.com/NK-EMPIRE/FS-X-VFX/tree/main/plugins/cinematic-sound`. Its README has the two install lines.
+Send the plugin's own page, e.g. `https://github.com/NK-EMPIRE/FS-X-CLAUDE/tree/main/plugins/cinematic-sound`. Its README has the two install lines.
 The person needs read access to this private repo (Settings → Collaborators, or a team in the NK-EMPIRE org).
 
 ## Layout

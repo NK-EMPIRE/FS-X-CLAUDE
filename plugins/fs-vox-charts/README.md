@@ -4,9 +4,9 @@ FirstSelfie Vox-style editorial data-chart animations in After Effects, scripted
 
 ## Install
 ```bash
-claude plugin marketplace add NK-EMPIRE/FS-X-VFX
+claude plugin marketplace add NK-EMPIRE/FS-X-CLAUDE
 claude plugin install fs-vox-charts@fs-x-vfx
 ```
 Restart Claude Code, then use: /vox-chart
 
-Part of the [FS-X-VFX marketplace](https://github.com/NK-EMPIRE/FS-X-VFX). Update with `claude plugin update fs-vox-charts@fs-x-vfx`.
+Part of the [FS-X-VFX marketplace](https://github.com/NK-EMPIRE/FS-X-CLAUDE). Update with `claude plugin update fs-vox-charts@fs-x-vfx`.
