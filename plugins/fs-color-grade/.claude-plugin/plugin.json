@@ -1,0 +1,7 @@
+{
+  "name": "fs-color-grade",
+  "version": "1.0.0",
+  "description": "Natural, pro colour grading that recreates a reference's look on your footage (Premiere Lumetri via MCP, Resolve or ffmpeg), keeps brand colours, proves it with numbers and review sheets, renders 4K at the right bitrate, and bakes the whole grade into a one-click .cube LUT for editors.",
+  "author": { "name": "FirstSelfie", "email": "firstselfie.official@gmail.com" },
+  "keywords": ["color-grading", "colour-grading", "lut", "premiere-pro", "lumetri", "davinci-resolve", "teal-orange"]
+}

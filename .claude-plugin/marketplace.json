@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "FS-X-VFX: FirstSelfie's Claude Code marketplace for cinematic CGI/VFX, motion design and video skills.",
-    "version": "1.1.0"
+    "version": "1.2.0"
   },
   "plugins": [
     {
@@ -48,6 +48,20 @@
         "charts",
         "data-visualization",
         "vox"
+      ]
+    },
+    {
+      "name": "fs-color-grade",
+      "source": "./plugins/fs-color-grade",
+      "version": "1.0.0",
+      "category": "video",
+      "description": "Natural, pro colour grading that recreates a reference's look on your footage (Premiere Lumetri via MCP, Resolve or ffmpeg), keeps brand colours, renders 4K right, and bakes the whole grade into a one-click .cube LUT for editors.",
+      "keywords": [
+        "color-grading",
+        "lut",
+        "premiere-pro",
+        "lumetri",
+        "davinci-resolve"
       ]
     }
   ]

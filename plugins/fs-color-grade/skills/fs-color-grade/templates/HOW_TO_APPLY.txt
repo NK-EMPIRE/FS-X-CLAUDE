@@ -1,0 +1,40 @@
+FIRSTSELFIE - MOODY TEAL GRADE  (one-click LUT)
+================================================
+
+FILES
+  FirstSelfie_MoodyTeal_FINAL.cube   <- the complete grade in one file (65-point 3D LUT, Rec.709)
+  FESTIVAL INTRO_GRADED_4K.mp4       <- graded reference video (4K, 25 fps, ~53 Mbps)
+  BEFORE_AFTER_*.jpg                 <- before / after comparison
+  GRADED_STILL_4K_*.png              <- exact graded 4K frames to match against
+
+The .cube already contains EVERYTHING: exposure, contrast, white balance,
+skin-tone correction and the teal look. Do not add anything else on top.
+
+PREMIERE PRO (one click)
+  1. Put the LUT on the footage clips (or on an adjustment layer above the
+     footage, BELOW any titles, graphics and logo animations).
+  2. Effects > Lumetri Color > Basic Correction > Input LUT > Browse...
+     -> choose FirstSelfie_MoodyTeal_FINAL.cube
+  3. Leave every other Lumetri slider at its default. Done.
+  (The Creative > Look > Browse slot also works, with Intensity at 100.)
+
+  To reuse it in any project with one click: after step 2, right-click
+  "Lumetri Color" in Effect Controls > Save Preset... > name it
+  "FS Moody Teal". It then appears under Effects > Presets.
+
+DAVINCI RESOLVE
+  Copy the .cube to Project Settings > Color Management > Open LUT Folder,
+  press Update Lists, then right-click a node > LUT > FirstSelfie_MoodyTeal_FINAL.
+
+AFTER EFFECTS
+  Effect > Utility > Apply Color LUT > choose the .cube.
+
+IMPORTANT
+  - The LUT is built for the same camera footage as this rough cut
+    (standard Rec.709, not LOG). Same camera, same lighting = same result.
+  - Apply it only once. If the final edit already has a grade or a LUT on
+    those clips, switch that off first.
+  - Do not put it on graphics, text or the logo animation; only on the
+    camera footage.
+  - Check against GRADED_STILL_4K_*.png: the face, teal background and
+    red FirstSelfie logo should match.
