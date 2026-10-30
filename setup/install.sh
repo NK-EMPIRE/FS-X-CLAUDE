@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
-# FS-X-VFX one-shot installer (macOS / Linux / Git Bash). Adds the marketplace and installs every plugin.
-# Usage:  bash setup/install.sh
+# FS-X-VFX installer (macOS / Linux / Git Bash). All plugins, or only the names you pass:
+#   bash setup/install.sh            bash setup/install.sh cinematic-sound vfx-intro
 set -e
-REPO="NK-EMPIRE/FS-X-VFX"; MARKET="fs-x-vfx"; PLUGINS=("vfx-intro")
-command -v claude >/dev/null || { echo "Claude Code CLI not found: https://claude.com/claude-code"; exit 1; }
-command -v git >/dev/null || { echo "Git not found. Install Git and sign in to GitHub first."; exit 1; }
-GIT_TERMINAL_PROMPT=0 git ls-remote "https://github.com/$REPO.git" >/dev/null 2>&1 || { echo "No access to the private repo: ask NK-EMPIRE to add your GitHub account, then sign in to Git."; exit 1; }
+REPO="NK-EMPIRE/FS-X-VFX"; MARKET="fs-x-vfx"; HERE="$(cd "$(dirname "$0")" && pwd)"
+command -v claude >/dev/null || { echo "Install Claude Code first: https://claude.com/claude-code"; exit 1; }
+command -v git >/dev/null || { echo "Install Git and sign in to GitHub first."; exit 1; }
+GIT_TERMINAL_PROMPT=0 git ls-remote "https://github.com/$REPO.git" >/dev/null 2>&1 || { echo "No access to $REPO: ask NK-EMPIRE for access."; exit 1; }
 if claude plugin marketplace list 2>&1 | grep -q "$MARKET"; then claude plugin marketplace update "$MARKET"; else claude plugin marketplace add "$REPO"; fi
+if [ $# -gt 0 ]; then PLUGINS=("$@"); else mapfile -t PLUGINS < <(python3 -c "import json;[print(p['name']) for p in json.load(open('$HERE/../.claude-plugin/marketplace.json'))['plugins']]" 2>/dev/null || python -c "import json;[print(p['name']) for p in json.load(open('$HERE/../.claude-plugin/marketplace.json'))['plugins']]"); fi
 for p in "${PLUGINS[@]}"; do claude plugin install "$p@$MARKET"; done
-echo; echo "Done. Restart Claude Code, then run /vfx-setup."
+echo "Installed: ${PLUGINS[*]}. Restart Claude Code."

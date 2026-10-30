@@ -1,45 +1,47 @@
 # FS-X-VFX
 
-FirstSelfie's private **Claude Code plugin marketplace** for cinematic CGI / VFX, motion design and video production skills.
+FirstSelfie's private **Claude Code plugin marketplace**: one repo for every skill and plugin we build.
+Each plugin installs **on its own**, so you can share just one plugin with someone.
 
-| Plugin | What it does | Commands |
-|---|---|---|
-| [vfx-intro](plugins/vfx-intro) | Cinema-grade 3D/VFX intros (Think School / Netflix-doc style) from a reference video, an idea or keywords. Blender + After Effects + ffmpeg, end to end. | `/vfx-intro`, `/vfx-setup` |
+## Catalogue
+| Plugin | What it does | Commands | Install |
+|---|---|---|---|
+| [vfx-intro](plugins/vfx-intro) | Cinema-grade 3D/VFX intros from a reference video, an idea or keywords | /vfx-intro, /vfx-setup | `claude plugin install vfx-intro@fs-x-vfx` |
+| [cinematic-sound](plugins/cinematic-sound) | Hollywood / Think School sound for a finished picture | /score-this | `claude plugin install cinematic-sound@fs-x-vfx` |
+| [fs-vox-charts](plugins/fs-vox-charts) | FirstSelfie Vox-style editorial data-chart animations in After Effects, scripted and rendered headless at 4K | /vox-chart | `claude plugin install fs-vox-charts@fs-x-vfx` |
 
-## Install (team members)
-1. Get access to this private repo (ask NK-EMPIRE), install [Git](https://git-scm.com) and sign in once. A `git clone` of this repo should work without errors.
-2. Install [Claude Code](https://claude.com/claude-code).
-3. Run:
+## Install
+**Once per computer**, add the marketplace. You need repo access and Git signed in to GitHub:
 ```bash
 claude plugin marketplace add NK-EMPIRE/FS-X-VFX
-claude plugin install vfx-intro@fs-x-vfx
 ```
-   Or clone the repo and run `setup\install.ps1` (Windows) / `bash setup/install.sh` (macOS/Linux), which installs every plugin in the catalogue.
-4. Restart Claude Code and run `/vfx-setup` once. It checks Blender, After Effects, ffmpeg, Python, the GPU and fonts.
-
-Inside Claude Code you can also type `/plugin` → *Add marketplace* → `NK-EMPIRE/FS-X-VFX`.
-
-**Update later:**
+**Then install only what you need**, one plugin or several:
 ```bash
-claude plugin marketplace update fs-x-vfx
-claude plugin update vfx-intro@fs-x-vfx
+claude plugin install vfx-intro@fs-x-vfx
+claude plugin install cinematic-sound@fs-x-vfx
+claude plugin install fs-vox-charts@fs-x-vfx
 ```
+Or install everything: `setup\install.ps1` (Windows) / `bash setup/install.sh` (macOS/Linux). Pass names to install only some: `setup\install.ps1 cinematic-sound`.
+Restart Claude Code after installing.
 
-## Use
-```
-/vfx-intro The Richest Temple in India: a gold temple bell cracks and explodes into the title
-/vfx-intro recreate and beat this reference: D:/refs/intro.mp4
-```
+**Update:** `claude plugin marketplace update fs-x-vfx`, then `claude plugin update <plugin>@fs-x-vfx`.
+**Remove:** `claude plugin uninstall <plugin>@fs-x-vfx`.
 
-## Repository layout
+## Share one plugin
+Send the plugin's own page, e.g. `https://github.com/NK-EMPIRE/FS-X-VFX/tree/main/plugins/cinematic-sound`. Its README has the two install lines.
+The person needs read access to this private repo (Settings → Collaborators, or a team in the NK-EMPIRE org).
+
+## Layout
 ```
-.claude-plugin/marketplace.json   catalogue of all plugins (add new ones here)
-plugins/<plugin>/                 one folder per plugin
-  .claude-plugin/plugin.json      name, version, description
-  skills/<skill>/SKILL.md         skills (+ references/, scripts/, examples/)
-  commands/<cmd>.md               slash commands
+.claude-plugin/marketplace.json   the catalogue (one entry per plugin)
+plugins/<plugin>/
+  .claude-plugin/plugin.json      name + version (must equal the catalogue entry)
+  README.md                       the share page for this plugin
+  skills/<skill>/SKILL.md         one or more skills (+ references/, scripts/, examples/)
+  commands/<command>.md           slash commands
 templates/plugin-template/        copy this to start a new plugin
-setup/install.ps1, install.sh     one-shot installers for team machines
-CONTRIBUTING.md                   how to add or update a plugin / skill
+setup/install.ps1, install.sh     installers (all plugins, or the names you pass)
+tools/validate.py                 checks every manifest, versions and READMEs before a push
+CONTRIBUTING.md                   how to add or update a plugin
 CHANGELOG.md                      release notes
 ```

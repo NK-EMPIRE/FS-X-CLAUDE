@@ -1,18 +1,54 @@
 {
   "name": "fs-x-vfx",
-  "owner": { "name": "NK-EMPIRE / FirstSelfie", "email": "firstselfie.official@gmail.com" },
+  "owner": {
+    "name": "NK-EMPIRE / FirstSelfie",
+    "email": "firstselfie.official@gmail.com"
+  },
   "metadata": {
     "description": "FS-X-VFX: FirstSelfie's Claude Code marketplace for cinematic CGI/VFX, motion design and video skills.",
-    "version": "1.0.0"
+    "version": "1.1.0"
   },
   "plugins": [
     {
       "name": "vfx-intro",
       "source": "./plugins/vfx-intro",
-      "description": "Cinema-grade 3D/VFX intros from a reference video, an idea or keywords: reverse-engineer, plan, Blender build, graded tests, render, After Effects finish, audit, 1080p/4K export, relinked package.",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "category": "video",
-      "keywords": ["vfx", "blender", "after-effects", "intro", "cgi"]
+      "description": "Cinema-grade 3D/VFX intros from a reference video, an idea or keywords: reverse-engineer, plan, Blender build, graded tests, render, After Effects finish, audit, 1080p/4K export, relinked package.",
+      "keywords": [
+        "vfx",
+        "blender",
+        "after-effects",
+        "intro",
+        "cgi"
+      ]
+    },
+    {
+      "name": "cinematic-sound",
+      "source": "./plugins/cinematic-sound",
+      "version": "1.0.0",
+      "category": "audio",
+      "description": "Hollywood / Think School sound for a finished picture: reference analysis, an original score composed to the beat grid with real instruments, physics-true SFX, mix and master, earshot QA.",
+      "keywords": [
+        "sound-design",
+        "music",
+        "score",
+        "sfx",
+        "mixing"
+      ]
+    },
+    {
+      "name": "fs-vox-charts",
+      "source": "./plugins/fs-vox-charts",
+      "version": "1.0.0",
+      "category": "motion-graphics",
+      "description": "FirstSelfie Vox-style editorial data-chart animations in After Effects, scripted and rendered headless at 4K.",
+      "keywords": [
+        "after-effects",
+        "charts",
+        "data-visualization",
+        "vox"
+      ]
     }
   ]
 }

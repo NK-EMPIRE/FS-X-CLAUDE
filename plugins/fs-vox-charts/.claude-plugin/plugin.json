@@ -1,0 +1,7 @@
+{
+  "name": "fs-vox-charts",
+  "version": "1.0.0",
+  "description": "FirstSelfie Vox-style editorial data-chart animations in After Effects, scripted and rendered headless at 4K: paper background, serif headline with highlighter, hand-rough charts, counters, word-by-word reveals, grain.",
+  "author": { "name": "FirstSelfie", "email": "firstselfie.official@gmail.com" },
+  "keywords": ["after-effects", "charts", "data-visualization", "motion-graphics", "vox"]
+}
