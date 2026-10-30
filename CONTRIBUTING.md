@@ -25,7 +25,7 @@ git add -A && git commit -m "<plugin>: <change> (vX.Y.Z)"
 git push
 claude plugin tag plugins/<plugin>      # optional: creates <plugin>--vX.Y.Z tag after checking versions agree
 ```
-Team members get it with `claude plugin marketplace update fs-x-vfx` + `claude plugin update <plugin>@fs-x-vfx`.
+Team members get it with `claude plugin marketplace update fs-x-claude` + `claude plugin update <plugin>@fs-x-claude`.
 
 ## Rules
 - Versioning: patch = fixes/wording, minor = new skill/command/feature, major = breaking change to scripts or config formats.

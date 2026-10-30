@@ -14,7 +14,7 @@ Includes the shipped FirstSelfie *Moody Teal* grade (`examples/firstselfie_festi
 ## Install
 ```bash
 claude plugin marketplace add NK-EMPIRE/FS-X-CLAUDE
-claude plugin install fs-color-grade@fs-x-vfx
+claude plugin install fs-color-grade@fs-x-claude
 ```
 Restart Claude Code, then use: /color-grade
 
@@ -23,4 +23,4 @@ Restart Claude Code, then use: /color-grade
 - ffmpeg on PATH;
 - for the Premiere route: Premiere Pro with the Premiere MCP bridge connected.
 
-Part of the [FS-X-VFX marketplace](https://github.com/NK-EMPIRE/FS-X-CLAUDE). Update with `claude plugin update fs-color-grade@fs-x-vfx`.
+Part of the [FS-X-CLAUDE marketplace](https://github.com/NK-EMPIRE/FS-X-CLAUDE). Update with `claude plugin update fs-color-grade@fs-x-claude`.

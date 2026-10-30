@@ -51,7 +51,7 @@ Copy `ae_build.jsx` to a folder **without spaces** (e.g. `D:/aetmp/<project>/`),
 - Tell the user clearly what the AE package can change (edit, timing, grade, title, effects) vs what needs Blender (anything 3D) and keep a small **Blender source kit** (scene.blend + scripts + maps, ~100 MB) after cleanup.
 
 ## 7. Sound
-After picture lock, score and sound-design the film with the **cinematic-sound** plugin (`/score-this <video> <reference>`): an original score composed to the beat grid, physics-true SFX, mastered to -14 LUFS, verified with earshot. Install it with `claude plugin install cinematic-sound@fs-x-vfx`.
+After picture lock, score and sound-design the film with the **cinematic-sound** plugin (`/score-this <video> <reference>`): an original score composed to the beat grid, physics-true SFX, mastered to -14 LUFS, verified with earshot. Install it with `claude plugin install cinematic-sound@fs-x-claude`.
 
 ## References
 - `references/reverse_engineering.md` - how to dissect a reference shot by shot + the "beyond" checklist

@@ -1,4 +1,4 @@
-# FS-X-VFX
+# FS-X-CLAUDE
 
 FirstSelfie's private **Claude Code plugin marketplace**: one repo for every skill and plugin we build.
 Each plugin installs **on its own**, so you can share just one plugin with someone.
@@ -6,10 +6,10 @@ Each plugin installs **on its own**, so you can share just one plugin with someo
 ## Catalogue
 | Plugin | What it does | Commands | Install |
 |---|---|---|---|
-| [vfx-intro](plugins/vfx-intro) | Cinema-grade 3D/VFX intros from a reference video, an idea or keywords | /vfx-intro, /vfx-setup | `claude plugin install vfx-intro@fs-x-vfx` |
-| [cinematic-sound](plugins/cinematic-sound) | Hollywood / Think School sound for a finished picture | /score-this | `claude plugin install cinematic-sound@fs-x-vfx` |
-| [fs-vox-charts](plugins/fs-vox-charts) | FirstSelfie Vox-style editorial data-chart animations in After Effects, scripted and rendered headless at 4K | /vox-chart | `claude plugin install fs-vox-charts@fs-x-vfx` |
-| [fs-color-grade](plugins/fs-color-grade) | Natural pro colour grading from a reference video, plus a one-click .cube LUT of the finished grade for editors | /color-grade | `claude plugin install fs-color-grade@fs-x-vfx` |
+| [vfx-intro](plugins/vfx-intro) | Cinema-grade 3D/VFX intros from a reference video, an idea or keywords | /vfx-intro, /vfx-setup | `claude plugin install vfx-intro@fs-x-claude` |
+| [cinematic-sound](plugins/cinematic-sound) | Hollywood / Think School sound for a finished picture | /score-this | `claude plugin install cinematic-sound@fs-x-claude` |
+| [fs-vox-charts](plugins/fs-vox-charts) | FirstSelfie Vox-style editorial data-chart animations in After Effects, scripted and rendered headless at 4K | /vox-chart | `claude plugin install fs-vox-charts@fs-x-claude` |
+| [fs-color-grade](plugins/fs-color-grade) | Natural pro colour grading from a reference video, plus a one-click .cube LUT of the finished grade for editors | /color-grade | `claude plugin install fs-color-grade@fs-x-claude` |
 
 ## Install
 **Once per computer**, add the marketplace. You need repo access and Git signed in to GitHub:
@@ -18,16 +18,16 @@ claude plugin marketplace add NK-EMPIRE/FS-X-CLAUDE
 ```
 **Then install only what you need**, one plugin or several:
 ```bash
-claude plugin install vfx-intro@fs-x-vfx
-claude plugin install cinematic-sound@fs-x-vfx
-claude plugin install fs-vox-charts@fs-x-vfx
-claude plugin install fs-color-grade@fs-x-vfx
+claude plugin install vfx-intro@fs-x-claude
+claude plugin install cinematic-sound@fs-x-claude
+claude plugin install fs-vox-charts@fs-x-claude
+claude plugin install fs-color-grade@fs-x-claude
 ```
 Or install everything: `setup\install.ps1` (Windows) / `bash setup/install.sh` (macOS/Linux). Pass names to install only some: `setup\install.ps1 cinematic-sound`.
 Restart Claude Code after installing.
 
-**Update:** `claude plugin marketplace update fs-x-vfx`, then `claude plugin update <plugin>@fs-x-vfx`.
-**Remove:** `claude plugin uninstall <plugin>@fs-x-vfx`.
+**Update:** `claude plugin marketplace update fs-x-claude`, then `claude plugin update <plugin>@fs-x-claude`.
+**Remove:** `claude plugin uninstall <plugin>@fs-x-claude`.
 
 ## Share one plugin
 Send the plugin's own page, e.g. `https://github.com/NK-EMPIRE/FS-X-CLAUDE/tree/main/plugins/cinematic-sound`. Its README has the two install lines.

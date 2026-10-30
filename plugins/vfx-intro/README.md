@@ -5,8 +5,8 @@ Cinema-grade 3D/VFX intros from a reference video, an idea or keywords: reverse-
 ## Install
 ```bash
 claude plugin marketplace add NK-EMPIRE/FS-X-CLAUDE
-claude plugin install vfx-intro@fs-x-vfx
+claude plugin install vfx-intro@fs-x-claude
 ```
 Restart Claude Code, then use: /vfx-intro, /vfx-setup
 
-Part of the [FS-X-VFX marketplace](https://github.com/NK-EMPIRE/FS-X-CLAUDE). Update with `claude plugin update vfx-intro@fs-x-vfx`.
+Part of the [FS-X-CLAUDE marketplace](https://github.com/NK-EMPIRE/FS-X-CLAUDE). Update with `claude plugin update vfx-intro@fs-x-claude`.

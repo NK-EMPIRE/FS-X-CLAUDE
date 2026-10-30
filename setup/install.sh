@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# FS-X-VFX installer (macOS / Linux / Git Bash). All plugins, or only the names you pass:
+# FS-X-CLAUDE installer (macOS / Linux / Git Bash). All plugins, or only the names you pass:
 #   bash setup/install.sh            bash setup/install.sh cinematic-sound vfx-intro
 set -e
-REPO="NK-EMPIRE/FS-X-CLAUDE"; MARKET="fs-x-vfx"; HERE="$(cd "$(dirname "$0")" && pwd)"
+REPO="NK-EMPIRE/FS-X-CLAUDE"; MARKET="fs-x-claude"; HERE="$(cd "$(dirname "$0")" && pwd)"
 command -v claude >/dev/null || { echo "Install Claude Code first: https://claude.com/claude-code"; exit 1; }
 command -v git >/dev/null || { echo "Install Git and sign in to GitHub first."; exit 1; }
 GIT_TERMINAL_PROMPT=0 git ls-remote "https://github.com/$REPO.git" >/dev/null 2>&1 || { echo "No access to $REPO: ask NK-EMPIRE for access."; exit 1; }
